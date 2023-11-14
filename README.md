@@ -17,6 +17,7 @@ uci set fstab.rwm.target="/rwm"
 uci commit fstab
 
 block info
+
 </sup>
 
 ![image](https://github.com/Sincan2/Openwrt-Steven/assets/6367413/3db4c656-0bc7-4797-86f8-0bfdb0645589)
