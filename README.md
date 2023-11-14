@@ -16,6 +16,8 @@ uci set fstab.rwm.target="/rwm"
 uci commit fstab
 
 block info
+
+
 ![image](https://github.com/Sincan2/Openwrt-Steven/assets/6367413/3db4c656-0bc7-4797-86f8-0bfdb0645589)
 
 DEVICE="$(block info | sed -n -e '/MOUNT="\S*\/overlay"/s/:\s.*$//p')"
@@ -27,7 +29,9 @@ uci commit fstab
 
 DEVICE="/dev/mmcblk0p1"
 mkfs.ext4 -L extroot ${DEVICE}
+
 ![image](https://github.com/Sincan2/Openwrt-Steven/assets/6367413/962c1387-f0ea-458c-848a-6ceecbc8651c)
+
 
 eval $(block info ${DEVICE} | grep -o -e 'UUID="\S*"')
 eval $(block info | grep -o -e 'MOUNT="\S*/overlay"')
