@@ -46,6 +46,11 @@ mount ${DEVICE} /mnt
 tar -C ${MOUNT} -cvf - . | tar -C /mnt -xf -
 reboot
 
+
+![image](https://github.com/Sincan2/Openwrt-Steven/assets/6367413/964c3cb9-62bd-421c-969c-67d231fa0254)
+
+
+
 Rokok Sek Ojo Lali Qe3
 
 
