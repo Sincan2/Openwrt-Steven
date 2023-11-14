@@ -30,6 +30,7 @@ uci commit fstab
 DEVICE="/dev/mmcblk0p1"
 mkfs.ext4 -L extroot ${DEVICE}
 
+
 ![image](https://github.com/Sincan2/Openwrt-Steven/assets/6367413/962c1387-f0ea-458c-848a-6ceecbc8651c)
 
 
