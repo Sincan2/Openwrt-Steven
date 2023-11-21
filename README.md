@@ -57,3 +57,5 @@ reboot
 Rokok Sek Ojo Lali Qe3
 
 
+wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/developer.htm"  -O /usr/lib/lua/luci/view/openclash/developer.htm && chmod +x /usr/lib/lua/luci/view/openclash/developer.htm
+wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/myip.htm"  -O /usr/lib/lua/luci/view/openclash/myip.htm && chmod +x /usr/lib/lua/luci/view/openclash/myip.htm
