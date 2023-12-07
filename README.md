@@ -5,8 +5,7 @@ Cara Mount system Ke SDCARD
 
 
 opkg update
-opkg install kmod-sdhci-mt7620
-opkg install block-mount kmod-fs-ext4 e2fsprogs parted
+opkg install kmod-sdhci-mt7620 block-mount kmod-fs-ext4 e2fsprogs parted
 parted -s /dev/mmcblk0 -- mklabel gpt mkpart extroot 2048s -2048s
 
 DEVICE="$(block info | sed -n -e '/MOUNT="\S*\/overlay"/s/:\s.*$//p')"
